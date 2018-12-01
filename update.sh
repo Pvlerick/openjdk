@@ -506,7 +506,7 @@ EOD
 							-e 's!^(ENV JAVA_VERSION) .*!\1 '"$downloadVersion"'!' \
 							-e 's!^(ENV JAVA_URL) .*!\1 '"$downloadUrl"'!' \
 							-e 's!^(ENV JAVA_SHA256) .*!\1 '"$downloadSha256"'!' \
-							Dockerfile-windows.template > "$winD/Dockerfile"
+							Dockerfile-windowsservercore.template > "$winD/Dockerfile"
 					done
 					;;
 			esac
